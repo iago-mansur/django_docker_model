@@ -47,3 +47,17 @@ criar app/core/management/commands/wait_for_db.py
 criar app/core/tests/test_commands.py
 
 docker-compose run --rm app sh -c "python manage.py test"
+
+editar app/core/management/commands/wait_for_db.py
+
+docker-compose run --rm app sh -c "python manage.py test"
+
+docker-compose run --rm app sh -c "python manage.py wait_for_db"
+
+editar docker-compose.yml
+
+docker-compose down
+
+docker-compose up
+
+http://127.0.0.1:8000/
